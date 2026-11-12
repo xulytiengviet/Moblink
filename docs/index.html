@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111b35">
+  <meta name="description" content="Moblink: giới thiệu tiếng Việt ứng dụng mã nguồn mở PlainApp, quản lý điện thoại Android qua trình duyệt trong mạng nội bộ. Tập tin, ảnh, SMS, danh bạ, phản chiếu màn hình.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:title" content="Moblink — Quản lý điện thoại từ trình duyệt">
+  <meta property="og:description" content="Mã nguồn mở, không cần đám mây. Khám phá giao diện quản lý Android qua mạng nội bộ.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/xulytiengviet/Moblink/main/screenshots/web-home.webp">
+  <title>Moblink — Quản lý Android từ trình duyệt | Tiếng Việt</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='17' fill='%232d4ed7'/%3E%3Cpath d='M17 46V18h7l8 13 8-13h7v28h-7V30l-8 12-8-12v16z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./app.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Moblink (bản fork PlainApp)","applicationCategory":"UtilitiesApplication","operatingSystem":"Android 9+","description":"Ứng dụng mã nguồn mở cho phép quản lý Android qua trình duyệt trên cùng mạng nội bộ.","softwareHelp":{"@type":"WebPage","url":"https://plainapp.app/docs"},"isBasedOn":"https://github.com/plainhub/plain-app","license":"https://www.gnu.org/licenses/agpl-3.0.html","url":"https://github.com/xulytiengviet/Moblink"}</script>
+</head>
+<body>
+<a href="#noi-dung" class="skip-link">Chuyển đến nội dung chính</a>
+<header class="site-header" id="dau-trang">
+  <div class="container header-inner">
+    <a class="brand" href="#dau-trang" aria-label="Moblink - về đầu trang"><span class="brand-mark">M<span>.</span></span><span class="brand-word">Moblink<span class="brand-suffix"> / VI</span></span></a>
+    <nav class="nav-links" id="site-nav" aria-label="Điều hướng chính">
+      <a href="#tong-quan">Tổng quan</a><a href="#tinh-nang">Tính năng</a><a href="#bao-mat">Bảo mật</a><a href="#anh-chup">Ảnh chụp</a><a href="#bat-dau">Bắt đầu</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button theme-toggle" type="button" aria-label="Chuyển chế độ sáng hoặc tối" title="Chuyển giao diện"><span aria-hidden="true">◐</span></button>
+      <a class="header-github" href="https://github.com/xulytiengviet/Moblink" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      <button class="icon-button menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Mở menu"><span aria-hidden="true">☰</span></button>
+    </div>
+  </div>
+</header>
+<main id="noi-dung">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="#dau-trang">Trang chủ</a><span>/</span><span>Dự án mã nguồn mở</span><span>/</span><strong>Moblink</strong></nav>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow light-eyebrow"><span class="live-dot"></span> OPEN SOURCE · ANDROID · LOCAL-FIRST</p>
+        <h1 id="hero-title">Điện thoại của bạn.<br><em>Một trình duyệt.</em><br>Toàn quyền chủ động.</h1>
+        <p class="hero-description">Moblink giới thiệu trải nghiệm quản lý Android từ máy tính bằng trình duyệt: truy cập tệp, ảnh, video, danh bạ, tin nhắn SMS, cuộc gọi và nhiều công cụ khác ngay trên mạng nội bộ.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-white" href="https://github.com/xulytiengviet/Moblink" target="_blank" rel="noopener noreferrer">Khám phá mã nguồn <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-outline" href="#bat-dau">Hướng dẫn kết nối <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-trust"><span>✓ Mã nguồn mở</span><span>✓ Không yêu cầu tài khoản</span><span>✓ Dùng cùng mạng Wi-Fi</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="browser-preview">
+          <div class="browser-chrome"><span class="traffic"><i></i><i></i><i></i></span><span class="address-pill">https://192.168.x.x:8443</span><span class="chrome-lock" aria-hidden="true">⌁</span></div>
+          <img src="https://raw.githubusercontent.com/xulytiengviet/Moblink/main/screenshots/web-home.webp" alt="Ảnh chụp bảng điều khiển web PlainApp/Moblink" fetchpriority="high" width="1200" height="675">
+        </div>
+        <div class="float-card float-card-top"><span class="float-icon">⌁</span><span><strong>Trình duyệt máy tính</strong><small>Không cần cài ứng dụng desktop</small></span></div>
+        <div class="float-card float-card-bottom"><span class="status-indicator"></span><span><strong>Kết nối nội bộ</strong><small>Điện thoại cung cấp giao diện web</small></span></div>
+      </div>
+    </section>
+    <div class="fact-grid" aria-label="Thông tin nhanh">
+      <div class="fact"><span class="fact-label">Nền tảng</span><strong>Android 9+</strong><span>Thiết bị hỗ trợ</span></div>
+      <div class="fact"><span class="fact-label">Mô hình</span><strong>Local-first</strong><span>Điện thoại làm máy chủ</span></div>
+      <div class="fact"><span class="fact-label">Giấy phép</span><strong>AGPL-3.0</strong><span>Phần mềm mã nguồn mở</span></div>
+      <div class="fact"><span class="fact-label">Mã nguồn</span><strong>Kotlin + Rust</strong><span>Tham khảo dự án gốc</span></div>
+    </div>
+  </div>
+
+  <div class="container article-layout">
+    <article class="article-main">
+      <section class="section" id="tong-quan">
+        <div class="section-heading"><p class="eyebrow">01 / GIỚI THIỆU</p><h2>Moblink là gì?</h2></div>
+        <p class="lead">Một ứng dụng Android mã nguồn mở cho phép điện thoại tự cung cấp bảng điều khiển web để bạn quản lý dữ liệu trên máy tính khi hai thiết bị ở cùng mạng.</p>
+        <p>Moblink là bản phân nhánh của <a href="https://github.com/plainhub/plain-app" target="_blank" rel="noopener noreferrer">PlainApp</a>. Trang tiếng Việt này được xây dựng để giới thiệu tính năng, diễn giải kiến trúc và hướng dẫn sử dụng thuận tiện hơn cho cộng đồng. Website giới thiệu <strong>không phải</strong> bảng điều khiển đang kết nối tới điện thoại của bạn.</p>
+        <div class="callout"><span class="callout-symbol" aria-hidden="true">✳</span><p><strong>Điểm khác biệt:</strong> Không cần tạo tài khoản hay truyền dữ liệu qua dịch vụ đám mây để quản lý thiết bị trong LAN. Ứng dụng Android là đầu mối cung cấp dịch vụ; trình duyệt là giao diện truy cập.</p></div>
+        <div class="section-mini-title"><h3>Thông tin dự án</h3><span>Khái quát nhanh</span></div>
+        <div class="overview-grid">
+          <div class="overview-item"><span class="mini-icon" aria-hidden="true">⌘</span><h4>Ứng dụng web nội bộ</h4><p>Mở bằng Chrome, Edge, Firefox hoặc trình duyệt tương thích trên máy tính.</p></div>
+          <div class="overview-item"><span class="mini-icon" aria-hidden="true">◇</span><h4>Tập trung quyền riêng tư</h4><p>Thiết kế sử dụng mạng nội bộ, không yêu cầu tài khoản hoặc dịch vụ đám mây.</p></div>
+          <div class="overview-item"><span class="mini-icon" aria-hidden="true">▣</span><h4>Đa chức năng</h4><p>Tệp, phương tiện, danh bạ, SMS, cuộc gọi, thông báo và phản chiếu màn hình.</p></div>
+          <div class="overview-item"><span class="mini-icon" aria-hidden="true">〈/〉</span><h4>Mã nguồn có thể kiểm tra</h4><p>Repository công khai, giấy phép AGPL-3.0; có thể nghiên cứu và đóng góp.</p></div>
+        </div>
+      </section>
+
+      <section class="section" id="tinh-nang">
+        <div class="section-heading"><p class="eyebrow">02 / KHẢ NĂNG</p><h2>Mọi thứ bạn cần, trong một giao diện.</h2><p>Khám phá các nhóm tính năng được giới thiệu trong mã nguồn PlainApp/Moblink.</p></div>
+        <label class="search-label" for="feature-search">Tìm nhanh tính năng</label>
+        <div class="search-field"><span aria-hidden="true">⌕</span><input type="search" id="feature-search" placeholder="Ví dụ: tệp, SMS, ảnh, thông báo..." autocomplete="off"><kbd>/</kbd></div>
+        <div class="features-grid" id="features-grid">
+          <div class="feature-card" data-search="tập tin file quản lý bộ nhớ sd usb tải lên tải xuống đổi tên xoá"><span class="feature-icon fi-blue">▤</span><h3>Quản lý tập tin</h3><p>Duyệt bộ nhớ điện thoại, thẻ nhớ và USB; tải lên, tải xuống, đổi tên, di chuyển hoặc xóa tệp.</p><a href="#anh-chup">Xem giao diện <span aria-hidden="true">↗</span></a></div>
+          <div class="feature-card" data-search="hình ảnh video nhạc audio media album phát trực tuyến"><span class="feature-icon fi-rose">▧</span><h3>Ảnh, video & nhạc</h3><p>Xem thư viện ảnh, mở video và nghe âm thanh trực tiếp từ trình duyệt hỗ trợ.</p><a href="#anh-chup">Xem giao diện <span aria-hidden="true">↗</span></a></div>
+          <div class="feature-card" data-search="tin nhắn sms gửi đọc nhận tin"><span class="feature-icon fi-violet">☷</span><h3>Tin nhắn SMS</h3><p>Xem và gửi SMS từ máy tính khi ứng dụng được cấp quyền tương ứng trên Android.</p><a href="#bat-dau">Cách kết nối <span aria-hidden="true">↗</span></a></div>
+          <div class="feature-card" data-search="cuộc gọi call lịch sử nhật ký cuộc gọi"><span class="feature-icon fi-amber">♧</span><h3>Nhật ký cuộc gọi</h3><p>Tra cứu lịch sử cuộc gọi và các thông tin liên quan trong bảng điều khiển.</p><a href="#anh-chup">Xem giao diện <span aria-hidden="true">↗</span></a></div>
+          <div class="feature-card" data-search="danh bạ contacts liên hệ tìm kiếm sửa"><span class="feature-icon fi-teal">♙</span><h3>Danh bạ</h3><p>Xem, tìm kiếm và quản lý liên hệ tùy theo quyền truy cập được cho phép.</p><a href="#anh-chup">Xem giao diện <span aria-hidden="true">↗</span></a></div>
+          <div class="feature-card" data-search="phản chiếu màn hình screen mirror điều khiển âm thanh webrtc"><span class="feature-icon fi-indigo">▣</span><h3>Phản chiếu màn hình</h3><p>Truyền hình ảnh màn hình điện thoại sang trình duyệt; tính năng điều khiển phụ thuộc phiên bản và quyền hệ thống.</p><a href="#anh-chup">Xem giao diện <span aria-hidden="true">↗</span></a></div>
+          <div class="feature-card" data-search="thông báo notification thời gian thực"><span class="feature-icon fi-orange">♢</span><h3>Thông báo</h3><p>Theo dõi thông báo từ điện thoại trên giao diện web khi quyền truy cập đã bật.</p><a href="#bao-mat">Lưu ý quyền riêng tư <span aria-hidden="true">↗</span></a></div>
+          <div class="feature-card" data-search="rss ghi chú markdown đồng bộ ứng dụng thông tin thiết bị pin"><span class="feature-icon fi-green">✦</span><h3>Công cụ mở rộng</h3><p>Ghi chú Markdown, đọc RSS, thông tin thiết bị, quản lý ứng dụng và những tiện ích khác.</p><a href="#anh-chup">Khám phá ảnh chụp <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <p class="no-results" id="no-results" hidden role="status">Không tìm thấy tính năng phù hợp. Hãy thử từ khóa khác.</p>
+      </section>
+
+      <section class="section" id="bao-mat">
+        <div class="section-heading"><p class="eyebrow">03 / RIÊNG TƯ & AN TOÀN</p><h2>Dữ liệu ở lại trong tầm kiểm soát.</h2><p>Bảo mật không chỉ là mã hóa: còn là quyền hệ thống, thiết bị và mạng mà bạn tin cậy.</p></div>
+        <div class="security-panel">
+          <div class="security-intro"><span class="security-orb" aria-hidden="true">◎</span><div><h3>Thiết kế ưu tiên mạng nội bộ</h3><p>Ứng dụng gốc mô tả kết nối sử dụng TLS kết hợp XChaCha20-Poly1305. Đây là tuyên bố kỹ thuật của dự án, không thay thế đánh giá bảo mật độc lập.</p></div></div>
+          <div class="security-grid">
+            <div><span>01</span><strong>Không phụ thuộc đám mây</strong><p>Trình duyệt truy cập thiết bị trực tiếp trên cùng mạng LAN.</p></div>
+            <div><span>02</span><strong>Quyền truy cập có chủ đích</strong><p>Chỉ bật SMS, danh bạ, tệp hoặc phản chiếu khi thực sự cần.</p></div>
+            <div><span>03</span><strong>Tắt dịch vụ sau khi dùng</strong><p>Dừng máy chủ web trong ứng dụng để giảm thời gian mở kết nối.</p></div>
+          </div>
+        </div>
+        <div class="warning-note"><strong>Lưu ý:</strong> Không chuyển tiếp cổng truy cập ra Internet, không sử dụng trên Wi-Fi công cộng hoặc mạng không tin cậy. Kiểm tra địa chỉ và hướng dẫn xác thực do chính ứng dụng hiển thị, đồng thời chỉ cài APK từ nguồn đã kiểm chứng.</div>
+      </section>
+
+      <section class="section" id="anh-chup">
+        <div class="section-heading"><p class="eyebrow">04 / GIAO DIỆN THỰC TẾ</p><h2>Xem Moblink hoạt động như thế nào.</h2><p>Ảnh chụp từ repository gốc, không phải dữ liệu của điện thoại khách truy cập. Chọn ảnh để phóng lớn.</p></div>
+        <div class="gallery">
+          <button class="gallery-item gallery-item-large" type="button" data-image="https://raw.githubusercontent.com/xulytiengviet/Moblink/main/screenshots/web-home.webp" data-caption="Bảng điều khiển — giao diện tổng quan"><img src="https://raw.githubusercontent.com/xulytiengviet/Moblink/main/screenshots/web-home.webp" alt="Bảng điều khiển web Moblink" loading="lazy"><span>Bảng điều khiển <b>↗</b></span></button>
+          <button class="gallery-item" type="button" data-image="https://raw.githubusercontent.com/xulytiengviet/Moblink/main/screenshots/web-files.png" data-caption="Trình quản lý tệp"><img src="https://raw.githubusercontent.com/xulytiengviet/Moblink/main/screenshots/web-files.png" alt="Trình quản lý tệp web" loading="lazy"><span>Quản lý tệp <b>↗</b></span></button>
+          <button class="gallery-item" type="button" data-image="https://raw.githubusercontent.com/xulytiengviet/Moblink/main/screenshots/web-images.png" data-caption="Thư viện ảnh trên web"><img src="https://raw.githubusercontent.com/xulytiengviet/Moblink/main/screenshots/web-images.png" alt="Bộ sưu tập ảnh trong trình duyệt" loading="lazy"><span>Thư viện ảnh <b>↗</b></span></button>
+          <button class="gallery-item" type="button" data-image="https://raw.githubusercontent.com/xulytiengviet/Moblink/main/screenshots/web-messages.png" data-caption="Tin nhắn SMS trên web"><img src="https://raw.githubusercontent.com/xulytiengviet/Moblink/main/screenshots/web-messages.png" alt="Giao diện tin nhắn SMS" loading="lazy"><span>Tin nhắn <b>↗</b></span></button>
+          <button class="gallery-item" type="button" data-image="https://raw.githubusercontent.com/xulytiengviet/Moblink/main/screenshots/web-screen-mirror.png" data-caption="Phản chiếu màn hình điện thoại"><img src="https://raw.githubusercontent.com/xulytiengviet/Moblink/main/screenshots/web-screen-mirror.png" alt="Giao diện phản chiếu màn hình" loading="lazy"><span>Phản chiếu <b>↗</b></span></button>
+          <button class="gallery-item" type="button" data-image="https://raw.githubusercontent.com/xulytiengviet/Moblink/main/screenshots/web-contacts.png" data-caption="Danh bạ"><img src="https://raw.githubusercontent.com/xulytiengviet/Moblink/main/screenshots/web-contacts.png" alt="Giao diện danh bạ trên web" loading="lazy"><span>Danh bạ <b>↗</b></span></button>
+        </div>
+      </section>
+
+      <section class="section" id="bat-dau">
+        <div class="section-heading"><p class="eyebrow">05 / HƯỚNG DẪN</p><h2>Bắt đầu trong ba bước.</h2><p>Không cần cài chương trình quản lý bổ sung trên máy tính.</p></div>
+        <div class="steps">
+          <div class="step"><span class="step-number">01</span><div><h3>Cài PlainApp trên Android</h3><p>Sử dụng bản phát hành chính thức từ Google Play, F-Droid hoặc GitHub của dự án gốc. Moblink hiện là bản fork mã nguồn, không tự nhận có APK đã kiểm thử riêng.</p><a href="https://f-droid.org/packages/com.ismartcoding.plain/" target="_blank" rel="noopener noreferrer">Mở F-Droid ↗</a></div></div>
+          <div class="step"><span class="step-number">02</span><div><h3>Bật truy cập web trên điện thoại</h3><p>Mở ứng dụng, tìm mục <strong>Web on PC</strong> hoặc chức năng tương đương, khởi động dịch vụ và cấp các quyền cần thiết.</p></div></div>
+          <div class="step"><span class="step-number">03</span><div><h3>Mở địa chỉ LAN trên máy tính</h3><p>Cho hai thiết bị vào cùng mạng Wi-Fi, nhập URL HTTPS được hiển thị trên điện thoại vào trình duyệt, rồi làm theo hướng dẫn xác thực của ứng dụng.</p><code>Ví dụ: https://192.168.1.50:8443</code></div></div>
+        </div>
+        <div class="download-strip"><div><p class="eyebrow">TẢI ỨNG DỤNG</p><h3>Bắt đầu với nguồn phát hành chính thức.</h3><p>Chọn kênh bạn tin cậy, đọc hướng dẫn cấp quyền trước khi sử dụng.</p></div><div class="download-actions"><a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.ismartcoding.plain" target="_blank" rel="noopener noreferrer">Google Play ↗</a><a class="btn btn-subtle" href="https://github.com/plainhub/plain-app/releases/latest" target="_blank" rel="noopener noreferrer">GitHub Releases ↗</a></div></div>
+      </section>
+
+      <section class="section" id="phan-tich">
+        <div class="section-heading"><p class="eyebrow">06 / GÓC NHÌN KỸ THUẬT</p><h2>Ứng dụng phù hợp với ai?</h2></div>
+        <div class="fit-grid">
+          <div class="fit-card yes"><span>✓ Phù hợp</span><h3>Người muốn làm chủ thiết bị</h3><p>Chuyển tệp, quản lý nội dung và dùng điện thoại trên máy tính mà không phải phụ thuộc một dịch vụ đồng bộ đám mây.</p></div>
+          <div class="fit-card no"><span>! Cần cân nhắc</span><h3>Mạng dùng chung hoặc truy cập từ xa</h3><p>Ứng dụng tập trung vào LAN tin cậy, không được thiết kế như dịch vụ quản trị xuyên Internet. Quyền SMS, màn hình và dữ liệu cá nhân cần được kiểm soát nghiêm ngặt.</p></div>
+        </div>
+        <p class="muted-paragraph">Moblink là nhánh mã nguồn từ PlainApp. Dấu hiệu có thư mục iOS trong repository không đồng nghĩa dự án cung cấp bản iOS chính thức; trang này chỉ hướng dẫn sử dụng Android. Tính năng có thể thay đổi theo bản phát hành và quyền hệ thống.</p>
+      </section>
+
+      <section class="section faq-section" id="hoi-dap">
+        <div class="section-heading"><p class="eyebrow">07 / CÂU HỎI THƯỜNG GẶP</p><h2>Những điều cần biết.</h2></div>
+        <div class="faq-list">
+          <details><summary>Có cần kết nối Internet không?<span aria-hidden="true">+</span></summary><p>Quản lý điện thoại qua web được thiết kế để chạy trên cùng mạng cục bộ. Hai thiết bị phải liên lạc được với nhau; chỉ những chức năng tải nội dung từ Internet (ví dụ RSS) mới cần kết nối ngoài.</p></details>
+          <details><summary>Trang giới thiệu này có truy cập được điện thoại không?<span aria-hidden="true">+</span></summary><p>Không. Đây chỉ là website thông tin tĩnh trên GitHub Pages. Muốn quản lý điện thoại, cần mở dịch vụ web ngay trong ứng dụng Android và dùng URL nội bộ của thiết bị.</p></details>
+          <details><summary>Moblink có phải ứng dụng độc lập với PlainApp?<span aria-hidden="true">+</span></summary><p>Repository Moblink hiện là fork của plainhub/plain-app. Cần giữ ghi nhận tác giả và tuân thủ AGPL-3.0 đối với mã nguồn phái sinh; trang này chưa chứng minh một bản dựng riêng đã được phát hành.</p></details>
+          <details><summary>Tôi có thể dùng trên iPhone không?<span aria-hidden="true">+</span></summary><p>Trang này hướng dẫn nền tảng Android 9 trở lên theo tài liệu PlainApp. Không nên suy ra có bản iOS được hỗ trợ chính thức chỉ từ cấu trúc thư mục mã nguồn.</p></details>
+          <details><summary>PlainApp/Moblink có miễn phí không?<span aria-hidden="true">+</span></summary><p>Ứng dụng gốc công bố mã nguồn mở, không quảng cáo, không yêu cầu tài khoản hoặc đăng ký sử dụng. Hãy kiểm tra giấy phép AGPL-3.0 trước khi phân phối bản sửa đổi.</p></details>
+        </div>
+      </section>
+    </article>
+
+    <aside class="article-sidebar" aria-label="Thông tin phụ">
+      <div class="sidebar-sticky">
+        <div class="toc-card"><p class="sidebar-heading">TRÊN TRANG NÀY</p><a href="#tong-quan"><span>01</span> Giới thiệu</a><a href="#tinh-nang"><span>02</span> Tính năng</a><a href="#bao-mat"><span>03</span> Quyền riêng tư</a><a href="#anh-chup"><span>04</span> Ảnh chụp</a><a href="#bat-dau"><span>05</span> Hướng dẫn</a><a href="#phan-tich"><span>06</span> Phân tích</a><a href="#hoi-dap"><span>07</span> Hỏi đáp</a></div>
+        <div class="side-project"><span class="side-project-icon">M.</span><h3>Moblink</h3><p>Bản phân nhánh PlainApp với trang tài liệu và giới thiệu tiếng Việt.</p><dl><div><dt>Loại</dt><dd>Ứng dụng Android</dd></div><div><dt>Giấy phép</dt><dd>AGPL-3.0</dd></div><div><dt>Mã nguồn</dt><dd>GitHub</dd></div></dl><a class="btn btn-primary full" href="https://github.com/xulytiengviet/Moblink" target="_blank" rel="noopener noreferrer">Mở repository ↗</a><a class="side-original" href="https://github.com/plainhub/plain-app" target="_blank" rel="noopener noreferrer">Xem dự án gốc PlainApp ↗</a></div>
+        <div class="side-note"><strong>Ghi nhận nguồn</strong><p>Phần mềm gốc: PlainApp, cộng đồng <a href="https://github.com/plainhub/plain-app" target="_blank" rel="noopener noreferrer">plainhub</a>. Giao diện trang giới thiệu được biên soạn lại bằng tiếng Việt, không liên kết chính thức với Hysen Labs.</p></div>
+      </div>
+    </aside>
+  </div>
+</main>
+<footer class="site-footer"><div class="container footer-main"><div><a class="brand" href="#dau-trang"><span class="brand-mark">M<span>.</span></span><span class="brand-word">Moblink<span class="brand-suffix"> / VI</span></span></a><p>Trình bày và hướng dẫn bằng tiếng Việt về quản lý điện thoại Android qua trình duyệt. Tôn trọng tác giả và giấy phép phần mềm gốc.</p></div><div class="footer-links"><strong>Tài nguyên</strong><a href="https://github.com/xulytiengviet/Moblink" target="_blank" rel="noopener noreferrer">Mã nguồn Moblink ↗</a><a href="https://github.com/plainhub/plain-app" target="_blank" rel="noopener noreferrer">PlainApp gốc ↗</a><a href="https://plainapp.app/docs" target="_blank" rel="noopener noreferrer">Tài liệu PlainApp ↗</a><a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener noreferrer">Giấy phép AGPL-3.0 ↗</a></div></div><div class="container footer-bottom"><span>© 2026 Moblink · Trang thông tin cộng đồng</span><span>Không thu thập dữ liệu thiết bị · Không có máy chủ quản lý điện thoại trên trang này</span><a href="#dau-trang">Về đầu trang ↑</a></div></footer>
+<dialog id="image-dialog" class="image-dialog" aria-label="Xem ảnh chụp màn hình"><div class="dialog-bar"><span id="dialog-caption">Ảnh chụp</span><button type="button" id="dialog-close" aria-label="Đóng ảnh">×</button></div><img id="dialog-image" alt=""><div class="dialog-nav"><button type="button" id="dialog-prev" aria-label="Ảnh trước">← Trước</button><span id="dialog-count"></span><button type="button" id="dialog-next" aria-label="Ảnh sau">Tiếp →</button></div></dialog>
+</body>
+</html>
