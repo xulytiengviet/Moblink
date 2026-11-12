@@ -6,31 +6,31 @@
 
 Mã nguồn trang tiếng Việt được đặt độc lập trong **[docs/index.html](docs/index.html)**:
 
-- \`docs/index.html\`: cấu trúc nội dung, SEO, hướng dẫn, bộ ảnh minh họa.
-- \`docs/style.css\`: giao diện responsive sáng/tối, phong cách trang giới thiệu dự án mã nguồn mở.
-- \`docs/app.js\`: tìm kiếm tính năng không dấu, menu di động, chuyển chủ đề, thư viện ảnh phóng lớn.
-- Hình ảnh được tham chiếu trực tiếp từ thư mục \`screenshots/\` thuộc repository này thông qua \`raw.githubusercontent.com\`.
+- `docs/index.html`: cấu trúc nội dung, SEO, hướng dẫn, bộ ảnh minh họa.
+- `docs/style.css`: giao diện responsive sáng/tối, phong cách trang giới thiệu dự án mã nguồn mở.
+- `docs/app.js`: tìm kiếm tính năng không dấu, menu di động, chuyển chủ đề, thư viện ảnh phóng lớn.
+- Hình ảnh được tham chiếu trực tiếp từ thư mục `screenshots/` thuộc repository này thông qua `raw.githubusercontent.com`.
 
 Trang giới thiệu là HTML/CSS/JavaScript tĩnh, **không** kết nối hoặc yêu cầu quyền truy cập điện thoại của khách truy cập. Chỉ app Android trên điện thoại mới có thể cung cấp dashboard thực tế.
 
 ### Xem thử cục bộ
 
-Có thể mở \`docs/index.html\` bằng trình duyệt. Để kiểm tra qua HTTP:
+Có thể mở `docs/index.html` bằng trình duyệt. Để kiểm tra qua HTTP:
 
-\`\`\`sh
+```sh
 python -m http.server 8080 --directory docs
-\`\`\`
+```
 
 Mở http://localhost:8080
 
 ### Xuất bản bằng GitHub Pages
 
-1. Mở **Settings → Pages** trong repository \`xulytiengviet/Moblink\`.
+1. Mở **Settings → Pages** trong repository `xulytiengviet/Moblink`.
 2. Chọn **Build and deployment → Source: Deploy from a branch**.
 3. Chọn **Branch: main**, **Folder: /docs**, sau đó **Save**.
 4. Sau khi GitHub Pages triển khai thành công, địa chỉ mặc định dự kiến là **https://xulytiengviet.github.io/Moblink/**.
 
-> GitHub Pages có thể đang tắt mặc định; tạo mã nguồn trong \`docs/\` không đồng nghĩa website đã được xuất bản. Cần kiểm tra trạng thái tại Settings → Pages.
+> GitHub Pages có thể đang tắt mặc định; tạo mã nguồn trong `docs/` không đồng nghĩa website đã được xuất bản. Cần kiểm tra trạng thái tại Settings → Pages.
 
 ## 📱 Hướng dẫn kết nối Android
 
