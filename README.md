@@ -1,3 +1,5 @@
+> 🇻🇳 **Moblink — trang tiếng Việt:** [Xem giao diện giới thiệu](docs/index.html) · [Hướng dẫn tiếng Việt và triển khai GitHub Pages](README.vi.md). Trang web giới thiệu được lưu riêng trong `docs/` và không thay đổi chức năng của ứng dụng Android.
+
 # PlainApp
 
 **PlainApp** is a free, open-source Android app that turns your phone into a self-hosted management hub you can access from any web browser on the same network — no accounts, no cloud, no subscriptions. Whether you need to transfer files, read SMS, browse photos, or mirror your screen, PlainApp puts full control back in your hands.
